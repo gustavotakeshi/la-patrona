@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>💖 Te amo, rabanita 💖</title>
+<style>
+  body {
+    background-color: #ffe6f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    color: #d81b60;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.6em;
+    margin-bottom: 25px;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .kitty {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .note {
+    margin-top: 30px;
+    font-size: 1.3em;
+    color: #880e4f;
+    animation: fadeIn 3s ease-in-out;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+  <h1>💖 Te amo, rabanita 💖</h1>
+
+  <img class="kitty" src="hello-kitty.png" alt="Hello Kitty">
+
+  <div class="note">Eres mi dulce Kitty 💕</div>
+</body>
+</html>
